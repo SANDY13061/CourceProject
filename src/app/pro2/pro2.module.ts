@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+
+
+
+
+import { Pro2RoutingModule } from './pro2-routing.module';
+import { Pro2Component } from './pro2.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -15,29 +18,21 @@ import {MatBadgeModule} from '@angular/material/badge';
 
 
 
-
-
-
-
-
 @NgModule({
   declarations: [
-    AppComponent
+    Pro2Component
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    MatMenuModule,
+    CommonModule,
+    Pro2RoutingModule,
     MatButtonModule,
-    MatBadgeModule
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    MatInputModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatMenuModule,
+    MatBadgeModule,
+    MatCardModule
+  ]
 })
-export class AppModule { }
+export class Pro2Module { }

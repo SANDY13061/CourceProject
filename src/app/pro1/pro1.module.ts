@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Pro1RoutingModule } from './pro1-routing.module';
+import { Pro1Component } from './pro1.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -15,19 +14,13 @@ import {MatBadgeModule} from '@angular/material/badge';
 
 
 
-
-
-
-
-
 @NgModule({
   declarations: [
-    AppComponent
+    Pro1Component
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    CommonModule,
+    Pro1RoutingModule,
     MatToolbarModule,MatIconModule,
     MatFormFieldModule,
     MatInputModule,
@@ -35,9 +28,6 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatMenuModule,
     MatButtonModule,
     MatBadgeModule
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  ]
 })
-export class AppModule { }
+export class Pro1Module { }
